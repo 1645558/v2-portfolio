@@ -3,15 +3,25 @@ import './App.css';
 function App() {
   return (
     <>
-      <div className='nav'>
-        <div className='name'>
-          Connor Thompson
+      <div className='container'>
+        <div className='nav'>
+          <ul>
+            <li>Connor Thompson</li>
+            <li>Github</li>
+            <li>LinkedIn</li>
+          </ul>
         </div>
-        Github
-        LinkedIn
-      </div>
-      <div className='header'>
-        Hi! I'm Connor - Full Stack Developer.
+        <section className='one'>
+          <div className='header'>
+            Hi! I'm Connor - Full Stack Developer.
+          </div>
+        </section>
+        <section className='2'>
+          GG's
+        </section>
+        <section className='3'>
+          GG's v2
+        </section>
       </div>
     </>
   );
