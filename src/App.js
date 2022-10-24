@@ -16,10 +16,10 @@ function App() {
             Hi! I'm Connor - Full Stack Developer.
           </div>
         </section>
-        <section className='2'>
+        <section className='two'>
           GG's
         </section>
-        <section className='3'>
+        <section className='three'>
           GG's v2
         </section>
       </div>
