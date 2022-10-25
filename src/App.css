@@ -42,17 +42,25 @@ body {
   display: flex;
   list-style: none;
   width: 100%;
-  justify-content: center;
+  margin-top: 1%;
 }
 
-.nav ul li {
-  margin: 0 1rem;
-  padding: 1rem;
-  cursor: pointer;
+li:nth-child(1) {
+  margin-left: 1rem;
+  cursor: default;
 }
 
-.nav ul li:hover {
+li:nth-child(2) {
+ margin-left: 60%;
+}
+
+li:nth-child(3) {
+  margin-left: 2%;
+}
+
+.nav ul li:hover:nth-child(n + 2) {
   color: plum;
+  cursor: pointer;
 }
 
 section {
@@ -64,5 +72,12 @@ section {
   width: 100%;
   height: 100vh;
   scroll-snap-align: center;
+}
+
+.vertical-line {
+  border-left: 4px solid coral;
+  display: block;
+  height: 10%;
+  transform: rotate(35deg);
 }
 

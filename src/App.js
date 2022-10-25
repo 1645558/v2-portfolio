@@ -15,12 +15,13 @@ function App() {
           <div className='header'>
             Hi! I'm Connor - Full Stack Developer.
           </div>
+          <span className='vertical-line'></span>
         </section>
         <section className='two'>
-          GG's
+          About
         </section>
         <section className='three'>
-          GG's v2
+          Contact Me
         </section>
       </div>
     </>
