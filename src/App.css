@@ -5,8 +5,8 @@
 }
 
 body {
-  background: #333;
-  color: #fff;
+  background: rgb(247, 247, 247);
+  /* color: rgb(33, 33, 33); */
   line-height: 1.6;
   height: 100vh;
   overflow: hidden;
@@ -35,7 +35,7 @@ body {
   display: flex;
   width: 100%;
   height: 60px;
-  background-color: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .nav ul {
@@ -74,10 +74,10 @@ section {
   scroll-snap-align: center;
 }
 
-.vertical-line {
+/* .vertical-line {
   border-left: 4px solid coral;
   display: block;
   height: 10%;
   transform: rotate(35deg);
-}
+} */
 

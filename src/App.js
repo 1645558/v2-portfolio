@@ -1,4 +1,5 @@
 import './App.css';
+import Carousel, { CarouselItem } from './Carousel';
 
 function App() {
   return (
@@ -18,6 +19,11 @@ function App() {
           <span className='vertical-line'></span>
         </section>
         <section className='two'>
+          <Carousel>
+            <CarouselItem>Item 1</CarouselItem>
+            <CarouselItem>Item 1</CarouselItem>
+            <CarouselItem>Item 1</CarouselItem>
+          </Carousel>
           About
         </section>
         <section className='three'>
