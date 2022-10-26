@@ -24,27 +24,39 @@ const Carousel = ({ children }) => {
     }
 
     return (
-        <div className='carousel'>
-            <div className='inner' style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
-                {React.Children.map(children, (child, index) => {
-                    return React.cloneElement(child, { width: '100%' });
-                })};
+        <>
+            <div className='carousel'>
+                <div className='inner' style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
+                    {React.Children.map(children, (child, index) => {
+                        return React.cloneElement(child, { width: '100%' });
+                    })};
+                </div>
+                <div className='indicators'>
+                    <button
+                        onClick={() => {
+                            updateIndex(activeIndex - 1);
+                        }}>
+                        Prev
+                    </button>
+                    {React.Children.map(children, (child, index) => {
+                        return (
+                            <button
+                            onClick={() => {
+                                updateIndex(index);
+                            }}>
+                                {index + 1}
+                            </button>
+                        );
+                    })};
+                    <button
+                        onClick={() => {
+                            updateIndex(activeIndex + 1);
+                        }}>
+                        Next
+                    </button>
+                </div>
             </div>
-            <div className='indicators'>
-                <button
-                    onClick={() => {
-                        updateIndex(activeIndex - 1);
-                    }}>
-                    Prev
-                </button>
-                <button
-                    onClick={() => {
-                        updateIndex(activeIndex + 1);
-                    }}>
-                    Next
-                </button>
-            </div>
-        </div>
+        </>
     );
 };
 
