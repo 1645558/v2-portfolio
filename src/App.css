@@ -58,6 +58,10 @@ li:nth-child(3) {
   margin-left: 2%;
 }
 
+a {
+  color: black;
+}
+
 .nav ul li:hover:nth-child(n + 2) {
   color: plum;
   cursor: pointer;
