@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
 import './Carousel.css';
 
 export const CarouselItem = ({ children, width }) => {
@@ -38,11 +39,18 @@ const Carousel = ({ children }) => {
         };
     });
 
+    const handlers = useSwipeable({
+        onSwipedLeft: () => updateIndex(activeIndex + 1),
+        onSwipedRight: () => updateIndex(activeIndex - 1)
+    });
+
     return (
         <>
-            <div className='carousel'
-            onMouseEnter={() => setPaused(true)}
-            onMouseLeave={() => setPaused(false)}
+            <div
+                {...handlers}
+                className='carousel'
+                onMouseEnter={() => setPaused(true)}
+                onMouseLeave={() => setPaused(false)}
             >
                 <div className='inner' style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
                     {React.Children.map(children, (child, index) => {
