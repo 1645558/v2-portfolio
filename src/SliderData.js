@@ -1,6 +1,6 @@
 import Apparel from './images/AppareLGBT-Screenshot.png';
 import FoodRun from './images/Food-Run.png';
-import GoogleBook from './images/Google-Book-Search (1).png';
+import GoogleBook from './images/GoogleBookSearch.png';
 
 export const SliderData = [
     {

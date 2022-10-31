@@ -2,6 +2,7 @@ import './App.css';
 import Carousel, { CarouselItem } from './Carousel';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Headshot from './images/IMG_1965.jpg';
 
 function App() {
   return (
@@ -20,16 +21,17 @@ function App() {
         </div>
         <section className='one'>
           <div className='header'>
-            Hi! I'm Connor - Full Stack Developer.
+            Hey! I'm Connor
           </div>
+          <div className='header-2'>
+            Full Stack Developer.
+          </div>
+          <img src={Headshot} alt='headshot' />
           <span className='vertical-line'></span>
         </section>
         <section className='two'>
-          <Carousel>
-            <CarouselItem>Item 1</CarouselItem>
-            <CarouselItem>Item 2</CarouselItem>
-            <CarouselItem>Item 3</CarouselItem>
-          </Carousel>
+          <Carousel />
+
           About
         </section>
         <section className='three'>
