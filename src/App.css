@@ -24,7 +24,7 @@ body {
 .header {
   display: flex;
   justify-content: center;
-  margin-top: 8%;
+  padding-top: 8%;
   font-size: 80px;
   color: aliceblue;
 }

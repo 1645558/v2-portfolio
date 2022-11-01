@@ -1,5 +1,6 @@
 import './App.css';
-import Carousel, { CarouselItem } from './Carousel';
+import { MantineProvider } from '@mantine/core';
+import Carousel from './Carousel';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Headshot from './images/IMG_1965.jpg';
@@ -7,6 +8,7 @@ import Headshot from './images/IMG_1965.jpg';
 function App() {
   return (
     <>
+    <MantineProvider withGlobalStyles withNormalizeCSS>
       <div className='container'>
         <div className='nav'>
           <ul>
@@ -31,13 +33,12 @@ function App() {
         </section>
         <section className='two'>
           <Carousel />
-
-          About
         </section>
         <section className='three'>
           Contact Me
         </section>
       </div>
+      </MantineProvider>
     </>
   );
 }
