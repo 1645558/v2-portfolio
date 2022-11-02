@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
-import './Carousel.css';
+// import './Carousel.css';
 import { Carousel } from '@mantine/carousel';
 import { Image } from '@mantine/core';
 import Autoplay from 'embla-carousel-autoplay';

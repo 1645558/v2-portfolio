@@ -24,19 +24,33 @@ body {
 .header {
   display: flex;
   justify-content: center;
-  padding-top: 8%;
+  top: 20%;
   font-size: 80px;
   color: aliceblue;
+  position: fixed;
 }
 
 .header-2 {
   font-size: 30px;
   margin-top: 2%;
   color: aliceblue;
+  position: fixed;
+  top: 40%;
+}
+
+.header-3 {
+  bottom: 5%;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
 }
 
 .one {
   background: linear-gradient(#304352, #d7d2cc);
+  display: flex;
+  contain: content;
 }
 
 .two {
@@ -104,6 +118,16 @@ section {
 img {
   height: 200px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    font-size: 45px;
+  }
+  .header-2 {
+    top: 35%;
+    font-size: 25px;
+  }
 }
 
 /* .vertical-line {
