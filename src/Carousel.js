@@ -1,13 +1,12 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import { useSwipeable } from 'react-swipeable';
-// import './Carousel.css';
 import { Carousel } from '@mantine/carousel';
 import { Image } from '@mantine/core';
 import Autoplay from 'embla-carousel-autoplay';
 
 const images = ['https://i.imgur.com/4sK81Mq.png',
-'https://i.imgur.com/IuuFucy.png',
-'https://i.imgur.com/PrVOlUX.png'
+    'https://i.imgur.com/IuuFucy.png',
+    'https://i.imgur.com/PrVOlUX.png'
 ];
 
 function Comp() {
@@ -19,15 +18,17 @@ function Comp() {
     ));
 
     return (
-        <Carousel
-            sx={{ maxWidth: '70%' }}
-            mx='auto'
-            plugins={[autoplay.current]}
-            onMouseEnter={autoplay.current.stop}
-            onMouseLeave={autoplay.current.reset}
-        >
-            {slides}
-        </Carousel>
+        <section className='two' >
+            <Carousel
+                sx={{ maxWidth: '70%' }}
+                mx='auto'
+                plugins={[autoplay.current]}
+                onMouseEnter={autoplay.current.stop}
+                onMouseLeave={autoplay.current.reset}
+            >
+                {slides}
+            </Carousel>
+        </section>
     )
 };
 
