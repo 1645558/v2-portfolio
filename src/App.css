@@ -51,7 +51,8 @@ body {
 }
 
 .one {
-  background: linear-gradient(#304352, #d7d2cc);
+  /* background: linear-gradient(#304352, #d7d2cc); */
+  background-color: #333D79FF;
   display: flex;
   contain: content;
 }
@@ -59,13 +60,15 @@ body {
 .two {
   display: flex;
   justify-content: center;
-  background: linear-gradient(#d7d2cc, #304352);
+  background-color: #FAEBEFFF;
+  /* background: linear-gradient(#d7d2cc, #304352); */
 }
 
 .three {
   display: flex;
   justify-content: center;
-  background: linear-gradient(#304352, #d7d2cc);
+  /* background: linear-gradient(#304352, #d7d2cc); */
+  background-color: #333D79FF;
 }
 
 .nav {
